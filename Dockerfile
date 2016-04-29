@@ -18,3 +18,6 @@ RUN apt-get update && \
         python3-distutils-extra \
     # Clean up!
     && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/local/src
+CMD /bin/bash
