@@ -1,0 +1,8 @@
+version: '2'
+services:
+    pkg-builder:
+        build: .
+        container_name: pkg-builder
+        hostname: pkg-builder
+        logging:
+            driver: "json-file"
