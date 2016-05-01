@@ -9,6 +9,7 @@ RUN apt-get update && \
         automake \
         build-essential \
         cdbs \
+        dh-make \
         dh-python \
         devscripts \
         git \
