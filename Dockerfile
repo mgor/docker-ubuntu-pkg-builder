@@ -11,6 +11,7 @@ RUN apt-get update && \
         cdbs \
         dh-make \
         dh-python \
+        debmake \
         devscripts \
         git \
         m4 \
