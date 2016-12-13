@@ -1,9 +1,9 @@
 NAME = mgor/ubuntu-pkg-builder
 HOSTNAME = pkg-builder
-TAG := $(shell git rev-parse --abbrev-ref HEAD)
+TAG = $(shell git rev-parse --abbrev-ref HEAD)
 
 ifeq ($(TAG),master)
-	TAG := "latest"
+	TAG = latest
 endif
 
 .PHONY = all build run
