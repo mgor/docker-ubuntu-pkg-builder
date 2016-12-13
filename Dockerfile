@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:yakkety
 MAINTAINER Mikael Göransson <github@mgor.se>
 
 # Using apt-get due to warning with apt:
