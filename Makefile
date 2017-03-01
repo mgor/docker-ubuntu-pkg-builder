@@ -14,4 +14,4 @@ build:
 	docker build -t $(NAME):$(TAG) .
 
 run:
-	docker run --rm --name $(HOSTNAME) --hostname $(HOSTNAME) -it $(NAME)
+	docker run --rm --name $(HOSTNAME) --hostname $(HOSTNAME) -it $(NAME):$(TAG)
