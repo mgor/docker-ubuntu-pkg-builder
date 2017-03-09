@@ -1,4 +1,4 @@
-FROM ubuntu:yakkety
+FROM ubuntu:zesty
 MAINTAINER Mikael Göransson <github@mgor.se>
 
 # Using apt-get due to warning with apt:
