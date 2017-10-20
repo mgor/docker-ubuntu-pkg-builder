@@ -1,4 +1,4 @@
-FROM ubuntu:artful
+FROM ubuntu:latest
 MAINTAINER Mikael Göransson <github@mgor.se>
 
 # Using apt-get due to warning with apt:
