@@ -11,7 +11,7 @@ endif
 all: build run
 
 build:
-	docker build -t $(NAME):$(TAG) .
+	DOCKER_BUILDKIT=1 docker build -t $(NAME):$(TAG) .
 
 run:
 	docker run --rm --name $(HOSTNAME) --hostname $(HOSTNAME) -it $(NAME)
