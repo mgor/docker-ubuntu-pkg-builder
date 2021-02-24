@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 MAINTAINER Mikael Göransson <github@mgor.se>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 # Using apt-get due to warning with apt:
 # WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 RUN apt-get update && \
