@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:groovy
 MAINTAINER Mikael Göransson <github@mgor.se>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -13,12 +13,14 @@ RUN apt-get update && \
         cdbs \
         dh-make \
         dh-python \
+        dh-autoreconf \
         devscripts \
         git \
         m4 \
         python3-dev \
         python3-pip \
         python3-distutils-extra \
+        sudo \
     # Clean up!
     && rm -rf /var/lib/apt/lists/*
 
