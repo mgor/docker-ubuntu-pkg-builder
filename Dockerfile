@@ -1,4 +1,4 @@
-FROM ubuntu:master
+FROM ubuntu:hirsute
 MAINTAINER Mikael Göransson <github@mgor.se>
 
 ENV DEBIAN_FRONTEND noninteractive
